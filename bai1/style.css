@@ -1,0 +1,262 @@
+.poster{
+    width: 160px;
+    height: 600px;
+    margin-top: 65px;
+}
+.thumbnail{
+    width: 200px;
+    height: 200px;
+}
+h3 {
+    margin-top: 20px;
+    font-family: cursive;
+    margin-left: 10px;
+    font-size: 30px;
+    color:goldenrod;
+}
+#border{
+    border-style: solid;
+    border-width: 3px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    display: block;
+}
+#border-container{
+    /* border-style: solid;
+    border-width: 3px; */
+    width: 80%;
+}
+
+.button-list {
+    margin: 15px;
+    text-align: right;
+    margin-right: 17px;
+}
+
+.font {
+    font-family: cursive;
+    text-shadow: 5px 5px 5px;
+    font-size: 70px;
+}
+.Products{
+    border-top: 3px solid black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.Category{
+    border-top: 3px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.Products a{
+    color: black;
+}
+.Category a{
+    color: black;
+}
+.Products a:hover{
+    color: darkgoldenrod;
+}
+.Category a:hover{
+    color:darkgoldenrod;
+}
+.Products p{
+    font-size: 20px;
+    text-align: center;
+}
+.Category p{
+    font-size: 20px;
+    text-align: center;
+}
+.input {
+    text-align: right;
+    margin-bottom: 30px;
+    margin-top: -60px;
+    margin-right: 10px;
+}
+
+.input-search {
+    border-radius: 10px 10px;
+    padding: 5px;
+}
+
+.contact {
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.contact a {
+    color: black;
+}
+
+.contact a:hover {
+    color: darkgoldenrod;
+}
+
+.info p{
+    margin: 5px ;
+}
+.feedback p{
+    margin: 5px;
+}
+.feedback {Top: 3px solid black;
+    height: 90px;
+}
+.feedback a {
+    color: black;
+}
+.feedback a:hover{
+    color: darkgoldenrod;
+}
+.info a{
+    color:black;
+}
+.info a:hover{
+    color:darkgoldenrod;
+}
+.feedback {
+    text-align: center;
+    position: relative;
+    bottom: 60px;
+}
+body {
+    background-color: whitesmoke;
+}
+@media (max-width: 1450px) {
+    #border-container {
+        width: 100%;
+    }
+    .contact {
+        text-align: left;
+    }
+    .thumbnail {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .input {
+        text-align: center;
+        margin: auto;
+    }
+    .contact {
+        text-align: center;
+        margin: 5px;
+    }
+    
+    h3 {
+        text-align: center;
+    }
+    .font {
+        text-align: center;
+    }
+    .thumbnail {
+        width: 300px;
+        height: 300px;
+    }
+    .poster {
+        position: relative;
+        bottom: 2200px;
+        right: 0px;
+        margin: auto;
+    }
+    .button-list {
+        text-align: center;
+    }
+    .info {
+        position: relative;
+        bottom: 600px;
+        right: 50px;
+    }
+    .feedback {
+        position: relative;
+        bottom: 600px;
+        left: 100px;
+        text-align: center;
+    }
+}
+@media (max-width: 767.98px) { 
+    .input {
+        text-align: center;
+        margin: auto;
+    }
+    .contact {
+        text-align: center;
+        margin: 5px;
+    }
+    .thumbnail {
+        width: 250px;
+        height: 250px;
+    }
+    h3 {
+        text-align: center;
+    }
+    .font {
+        text-align: center;
+    }
+    .poster {
+        position: relative;
+        bottom: 1800px;
+        right: 30px;
+        margin: auto;
+    }
+    .button-list {
+        text-align: center;
+    }
+    .info {
+        position: relative;
+        bottom: 600px;
+        right: 50px;
+    }
+    .feedback {
+        position: relative;
+        bottom: 600px;
+        left: 80px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .input {
+        text-align: center;
+        margin: auto;
+    }
+    .contact {
+        text-align: center;
+        margin: 5px;
+    }
+    .thumbnail{
+        width: 150px;
+        height: 150px;
+    }
+    h3 {
+        text-align: center;
+    }
+    .font {
+        font-size: 60px;
+        text-align: center;
+    }
+    .poster {
+        position: relative;
+        bottom: 1200px;
+        right: 30px;
+        margin: auto;
+    }
+    .button-list {
+        text-align: center;
+    }
+    .info {
+        position: relative;
+        bottom: 600px;
+        right: 50px;
+    }
+    .feedback {
+        position: relative;
+        bottom: 600px;
+        left: 80px;
+        text-align: center;
+    }
+}
