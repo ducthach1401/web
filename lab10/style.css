@@ -1,0 +1,45 @@
+.error {
+    color: red;
+}
+.successadd, .successupdate, .successdelete{
+    color: blue;
+}
+
+table {
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+td, th{
+    border: 1px solid black !important;
+    width: 100px;
+    height: 40px;
+}
+
+h3 {
+    color: darkgoldenrod;
+    margin-left: 20px;
+}
+
+form {
+    margin-left: 30px;
+}
+
+label {
+    margin: 10px;
+}
+
+select {
+    width: 70px;
+    height: 30px;
+    text-align: center;
+}
+.container{
+    margin-top: 20px;
+}
+
+.row {
+    margin-top: 30px !important;
+}

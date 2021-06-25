@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="bai2.css">
+    <script src="bai2.js"></script>
+</head>
+<body>
+    <div class="border border-dark border-4 khung">
+        <h1 class="title">Register Form</h1>
+        <form method="get">
+            <div class="form-format container">
+                <div class="row">
+                    <div class="col">
+                        <label for="firstname">First Name</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" name="firstname" id = "firstname">
+                    </div>
+                </div>  
+                <div class="row">
+                    <div class="col">
+                        <label for="lastname">Last Name</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" name="lastname" id = "lastname"> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" name="email" id = "email"> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="col">
+                        <input type="password" name="password" id = "password">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <label for="birthday">Birthday</label>
+                    </div>
+                    <div class="col-8">
+                        <select name="Day" id="Day">
+                            <option value="Day">Day</option>
+                            <script>create_day()</script>
+                        </select>
+                        <select name="Month" id="Month"">
+                            <option value="Month">Month</option>
+                            <script>create_month()</script>
+
+                        </select>
+                        <select name="Year" id="Year">
+                            <option value="Year">Year</option>
+                            <script>create_year()</script>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="gender">Gender</label>
+                </div>
+                <div class="row">
+                    <div class="col radio">
+                        <input type="radio" name="gender" id ="male" value="male" checked="true">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id ="female" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id ="other" value="other">
+                        <label for="other">Other</label> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="col">
+                        <select name="country" id="country">
+                            <option value="vietname">VietNam</option>
+                            <option value="australia">Australia</option>
+                            <option value="us">United States</option>
+                            <option value="india">India</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="about">About</label> <br>
+                    </div>
+                    <div class="col">
+                        <textarea name="about" id="about" cols="37" rows="5"></textarea> <br>
+                    </div>
+                </div>
+
+                <input type="button" id="submit" name="submit" value="Submit" onclick="click_submit()" class="btn btn-warning"> 
+                <input type="button" id="reset" name="reset" value="Reset" onclick="click_reset()" class="btn btn-warning">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

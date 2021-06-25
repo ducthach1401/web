@@ -1,0 +1,17 @@
+.layout {
+    margin: 50px !important;
+}
+
+.title {
+    text-align: center;
+    color: darkorange;
+}
+
+.layout label{
+    margin: 10px;
+}
+
+p {
+    font-size: larger;
+    color:goldenrod;
+}

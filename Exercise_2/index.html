@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Goole font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+        <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>1814217</title>
+
+    <style>
+        body {
+            background-color: rgb(247, 247, 249);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid mt-3">
+        <h1 class="ml-5" style="font-family: 'Montserrat', sans-serif;">COOKIE</h1>
+        <form class="add-new-cookie-form" action="" method="POST">
+            <h2 class="text-center text-info">Add New Cookie</h2>
+            <div class="form-group row mt-3">
+                <label class="col-2 offset-2 text-right col-form-label" for="cookie-name">Cookie Name:</label>
+                <input type="text" class="form-control col-2" id="cookie-name" name="cookie-name" onfocus="this.placeholder=''">
+                <label class="col-1 text-right col-form-label" for="cookie-value">Value:</label>
+                <input type="text" class="form-control col-2" id="cookie-value" name="cookie-value" onfocus="this.placeholder=''" >
+                <div class="col-1">
+                    <button name="btn-add" type="submit" class="btn btn-info btn-add">Add</button>
+                </div>
+            </div>
+            <div class="row cookie-problems">
+                <p class="col-5 offset-4 text-danger cookie-error d-none">Please enter Cookie's name and value!</p>
+                <p class="col-5 offset-4 text-success cookie-success d-none">New cookie is added successfully!</p>
+                <p class="col-5 offset-4 text-warning cookie-exist d-none">Cookie already exist!</p>
+            </div>
+        </form>
+        <div class="display-cookie text-center mt-5">
+            <h2 class="text-center text-primary mt-3">Display All Cookies</h2>
+            <button name="btn-add" type="button" class="btn btn-success btn-display mt-1">Display All Cookies</button>
+            <div class="container text-center mt-3">
+                </span><p class="cookies-info text-info d-inline"></p>
+            </div>
+        </div>
+        
+        <form class="edit-cookie-form mt-5" action="" method="POST">
+            <h2 class="text-center text-warning">Edit Cookie</h2>
+            <div class="form-group row mt-3">
+                <label class="col-2 offset-2 text-right col-form-label" for="cookie-name-edit">Cookie Name:</label>
+                <input type="text" class="form-control col-2" id="cookie-name-edit" name="cookie-name-edit" onfocus="this.placeholder=''">
+                <label class="col-1 text-right col-form-label" for="cookie-value-edit">New Value:</label>
+                <input type="text" class="form-control col-2" id="cookie-value-edit" name="cookie-value-edit" onfocus="this.placeholder=''" >
+                <div class="col-1">
+                    <button name="btn-add" type="submit" class="btn btn-warning btn-edit">Edit</button>
+                </div>
+            </div>
+            <div class="row cookie-problems">
+                <p class="col-5 offset-4 text-danger cookie-edit-error d-none">Please enter Cookie's name and value for editing!</p>
+                <p class="col-5 offset-4 text-success cookie-edit-success d-none">Cookie is modified successfully!</p>
+                <p class="col-5 offset-4 text-danger cookie-edit-not-exist d-none">Cookie does not exist!</p>
+            </div>
+        </form>
+
+        <form class="edit-cookie-form mt-5" action="" method="POST">
+            <h2 class="text-center text-danger">Delete Cookie</h2>
+            <div class="form-group row mt-3">
+                <label class="col-2 offset-2 text-right col-form-label" for="cookie-name-delete">Cookie Name:</label>
+                <input type="text" class="form-control col-2" id="cookie-name-delete" name="cookie-name-delete" onfocus="this.placeholder=''">
+                <div class="col-1">
+                    <button name="btn-add" type="submit" class="btn btn-danger btn-delete">Delete</button>
+                </div>
+            </div>
+            <div class="row cookie-problems">
+                <p class="col-5 offset-4 text-danger cookie-delete-error d-none">Please enter Cookie's name for delete!</p>
+                <p class="col-5 offset-4 text-success cookie-delete-success d-none">Cookie is deleted successfully!</p>
+                <p class="col-5 offset-4 text-danger cookie-delete-not-exist d-none">Cookie does not exist!</p>
+            </div>
+        </form>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

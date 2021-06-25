@@ -1,0 +1,29 @@
+ 
+REST (REpresentational State Transfer) là một dạng chuyển đổi cấu trúc dữ liệu, là một phong cách kiến ​​trúc cho việc thiết kế các ứng dụng có kết nối. REST sử dụng HTTP đơn giản để tạo cho giao tiếp giữa các máy. REST gửi một yêu cầu HTTP như GET, POST, DELETE, ... đến một URL để xử lý dữ liệu.
+
+Ưu điểm của REST:
+    - Giúp cho ứng dụng trở nên rõ ràng hơn.
+    - REST URL đại diện cho resource chứ không phải là hành động.
+    - Dữ liệu được trả về với nhiều định dạng khác nhau như: xml, html, rss, json …
+    - Code đơn giản và ngắn gọn.
+    - REST chú trọng vào tài nguyên hệ thống.
+
+Nhược điểm của REST:
+    - Chỉ hoạt động trên các giao thức HTTP.
+    - Việc bảo mật và xác thực có thể không đảm bảo bằng SOAP (stateless).
+    - Khó thiết kế vì là kiểu kiến trúc không phải là công nghệ.
+
+
+SOAP (Simple Object Access Protocol) là một giao thức dựa trên XML là nền tảng độc lập và ngôn ngữ độc lập để truy cập các web service. SOAP được khuyến cáo bởi W3C cho giao tiếp giữa hai ứng dụng. Có thể tương tác với các ứng dụng ngôn ngữ lập trình khác.
+
+Ưu điểm của SOAP:
+    - Tuân theo cách xử lý trong hệ thống của các doanh nghiệp lớn.
+    - Được thực hiện ở tầng trên của các giao thức giao tiếp, cả với các giao thức không đồng bộ, không bắt buộc phải là HTTP.
+    - Các thông tin của đối tượng được giao tiếp với khách hàng.
+    - Bảo mật và xác thực luôn được đảm bảo trong giao thức (nhờ stateful).
+    - Có thể được miêu tả bằng WSDL.
+
+Nhược điểm của SOAP:
+    - Việc duy trì trạng thái (stateful) khiến tiêu tốn tài nguyên cho các metadata.
+    - Khó sử dụng và không phổ biến bằng REST trong các ứng dụng web hay mobile thông thường.
+    - Chỉ sử dụng XML.

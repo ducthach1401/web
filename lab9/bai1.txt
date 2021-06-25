@@ -1,0 +1,27 @@
+Ưu điểm Cookie:
+
+ - Giúp lướt web nhanh hơn
+ - Lưu lại một số tìm kiếm truy cập
+ - Lưu ở Client nên giảm được băng thông tải xuống
+ - Dữ liệu cookie có sẵn xong trình duyệt đến khi hết hạn
+ 
+Nhược điểm Cookie:
+ - Lưu ở Client dễ chỉnh sửa nên bảo mật thấp.
+ 
+ Ứng dụng:
+ - Thời gian truy cập ứng dụng.
+ - Tần suất ghé web
+ - Đánh dấu lại các mục đã tìm kiếm, coi sản phẩm của khách hàng
+ 
+ Ưu điểm của Session:
+ - Bảo mật hơn vì lưu ở Server khó chỉnh sửa
+ - Lưu trữ thông tin Client lên Server
+ 
+ Nhược điểm:
+ - Tốn băng thông hơn Cookie do phải tải về hết
+ - Đóng trình duyệt hết hạn phiên làm việc
+ 
+Ứng dụng Session:
+ - Ghi lại thông tin giỏ hàng của khách.
+ - Xác thực đăng nhập
+

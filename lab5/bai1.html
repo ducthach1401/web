@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script type="text/javascript">
+        function cal(str){
+            temp = document.getElementById("calculation").value;
+            var mark = ["+", "-" , "*", "/","^"];
+            var test = 0;
+            var a = 0;
+            var b = 0;
+            var operator = "";
+            var flag = 1;
+            temp = temp.split(" ");
+            temp = temp.join("");
+            for (var i=0;i < temp.length; i++){
+                if (isNaN(temp[i])){
+                    for (j of mark){
+                        if ((temp[i]===j)&&(flag)){
+                            operator = temp[i];
+                            flag = 0;
+                        }
+                    }
+                    if (flag){
+                        document.getElementById("result").value = "ERROR";
+                        return;
+                    }
+                }
+                else {
+                    if (flag){
+                        a = a * 10 + Number(temp[i]);
+                    }
+                    else {
+                        b = b * 10 +Number(temp[i]);
+                    }
+                }
+            }
+            if (operator === "^"){
+                test = 1;
+                for (var i = 1; i<= b; i++){
+                    test = test *a;
+                }
+            }
+            else {
+                test = eval(temp);
+            }
+            document.getElementById("result").value = test;
+        }
+    </script>
+    <style>
+        input {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Input calculation</p>
+        <p id="test"></p>
+        <form>
+            <label for="calculation">Calculation: </label>
+            <input type="text" name="calculation" id="calculation"> <br>
+            <input type="button" name="submit" id="submit" onclick="cal('calculation')" value="Submit"> <br>
+            <label for="result">Result: </label>
+            <input type="text" name="result" id="result"> 
+        </form>
+    </div>
+</body>
+</html>
